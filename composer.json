@@ -1,0 +1,27 @@
+{
+    "name": "sales/client",
+    "description": "Maintain all basic client routes and configuration",
+    "type": "library",
+    "license": "self",
+    "authors": [
+        {
+            "name": "Mohan Rajendra",
+            "email": "mohan.prasad725@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+
+    "autoload": {
+       "psr-4": {
+         "Sales\\Client\\": "src"
+       }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+               "Sales\\Client\\ClientServiceProvider"
+            ]
+        }
+    }
+}
